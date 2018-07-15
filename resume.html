@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #header {
+        background-color:black;
+        color:white;
+        text-align:center;
+        padding:5px;
+    }
+    #introduction {
+        line-height:30px;
+        background-color:#eeeeee;
+        height:700px;
+        width:50%;
+        float:left;
+        padding:5px;	      
+    }
+    #baseInfo {
+        width:350px;
+        float:left;
+        padding:10px;	 	 
+    }
+    #footer {
+        background-color:black;
+        color:white;
+        clear:both;
+        text-align:center;
+       padding:5px;	 	 
+    }
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+    </style>
+    <script>
+        window.onload = function(){
+  var winHeight = 0;
+  if (window.innerHeight){
+    winHeight = window.innerHeight;
+  }else if ((document.body) && (document.body.clientHeight)){
+    winHeight = document.body.clientHeight;
+  }
+  var html = document.getElementsByTagName('html')[0];
+  if(document.body.offsetHeight < windowHeight){
+      html.style.height = windowHeight;
+  }
+};
+
+    </script>
+</head>
+<body>
+    <div style="position:absolute;">
+    <div id="header">个人简历</div>
+    <div>
+        <div id="introduction">
+            个人介绍
+        <div>
+            <p>
+                2014-2018年就读于湖南大学信息科学与工程学院软件工程专业，在校期间表现良好。平时兴趣爱好广泛，喜欢各种运动，但是并不擅长。喜欢结交朋友，尊崇“多个朋友多条路”原则。性格处于由内向到外向的转变过程中。
+                毕业后有幸来到了东方海外珠海处（OOCL），这里成为了我大学之后新的起点，从此开始步入社会，面对的一切和学校里天差地别，远离家乡，需要学会各种新技能。
+
+                2014-2018 就读于湖南大学信息科学与工程学院软件工程专业
+                2011-2014 就读于天津市静海区第一中学
+                ... ...
+
+                实习经历
+                2017.8-2018.1 在湖南科创信息技术股份有限公司
+
+                项目经历
+
+                2016.9-2017.5
+                云服务下的性能管理工具（课程项目）
+                项目功能：检测服务器中的各项指标，包括cpu、内存、网络等相关信息，并时时同步到页面展示
+                使用框架：MVC
+                使用技术：Java，jsp，MySQL数据库，tomcat服务器
+
+                2018.2-2018.6
+                掌上报帐管理系统（毕业设计）
+                将传统的报账活动转移到互联网上，简化操作流程，提高工作效率，实现无纸化办公。
+                使用框架：Spring、Spring MVC、Hibernate，Bootstrap、Jquery、layer
+                使用技术：Java，jsp，MySQL数据库，tomcat服务器
+
+            </p>
+        </div>
+    </div>
+        <div id="baseInfo">
+        <table>
+            <thead>
+                基本信息
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <th>姓名</th>
+                    <td>张林秋</td>
+                </tr>
+                <tr class="even">
+                    <th>出生日期</th>
+                    <td>1993.12.03</td>
+                </tr>
+                <tr class="odd">
+                    <th>手机号</th>
+                    <td>131-8703-6797</td>
+                </tr>
+                <tr class="even">
+                    <th>邮箱</th>
+                    <td>jerry.zhang@oocl.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <div id="footer">
+        我的个人简历
+    </div>
+</div>
+</body>
+</html>

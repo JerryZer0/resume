@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+     body {background-image:#c9dab9;}
+    #introduction {
+        line-height:30px;
+        background-color:#eeeeee;
+        height:700px;
+        width:50%;
+        float:left;
+        padding:5px;	      
+    }
+    #baseInfo {
+        width:350px;
+        float:left;
+        padding:10px;	 	 
+    }
+    </style>
+    <script>
+            window.onload = function(){
+      var winHeight = 0;
+      if (window.innerHeight){
+        winHeight = window.innerHeight;
+      }else if ((document.body) && (document.body.clientHeight)){
+        winHeight = document.body.clientHeight;
+      }
+      var html = document.getElementsByTagName('html')[0];
+      if(document.body.offsetHeight < windowHeight){
+          html.style.height = windowHeight;
+      }
+    };
+    
+        </script>
+</head>
+<body>
+    <div id='introduction'><p>
+        <img src="./images/myPhoto.jpg" align="right" />
+    </p>
+           
+    </div>
+    <div id='baseInfo' >
+        <ul class="odd">
+                <th>姓名</th>
+                <td>张林秋</td>
+        </ul>
+        <ul class="even">
+            <th>出生日期</th>
+            <td>1993.12.03</td>
+        </ul>
+        <ul class="odd">
+            <th>手机号</th>
+            <td>131-8703-6797</td>
+        </ul>
+        <ul class="even">
+            <th>邮箱</th>
+            <td>jerry.zhang@oocl.com</td>
+        </ul>
+
+    </div>
+</body>
+</html>
